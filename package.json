@@ -1,7 +1,7 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "> User stories:",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/mparigi/timestamp/issues"
   },
-  "homepage": "https://github.com/mparigi/timestamp#readme"
+  "homepage": "https://github.com/mparigi/timestamp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.14.1"
+  }
 }
