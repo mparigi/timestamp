@@ -9,14 +9,15 @@ app.get("*", function (req, res) {
         "unix": null,
         "natural": null
     }
-    if () { //unix timestamp
+    
+    if (moment(input, "X", true).isValid()) { //unix timestamp
         console.log("passed in unix timestamp");
-        output["unix"] = ;//set outputs
-        output["natural"] = ;//set outputs 
-    } else if () { //natural language
+        output["unix"] = parseInt(input);
+        output["natural"] = moment(input, "X", true).format("MMMM D, YYYY"); 
+    } else if (moment(decodeURI(input), "MMMM D, YYYY", true).isValid()) { //natural language
         console.log("passed in natural language");
-        output["unix"] = ;//set outputs
-        output["natural"] = ;//set outputs
+        output["unix"] = moment(decodeURI(input), "MMMM D, YYYY", true).format("X");
+        output["natural"] = decodeURI(input);
     }
     
     res.send(JSON.stringify(output));
