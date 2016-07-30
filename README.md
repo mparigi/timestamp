@@ -11,10 +11,10 @@
 
 #### Example Usage
 ```
-/December%2015,%202015
+https://timestamp-mparigi.herokuapp.com/December%2015,%202015
 ```
 ```
-/1450137600
+https://timestamp-mparigi.herokuapp.com/1450137600
 ```
 
 #### Example Output
